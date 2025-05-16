@@ -1,5 +1,5 @@
 // Gen Z Slang Dictionary
-const slangDictionary = {
+const slangDictionary = {//test
     "rizz": {
         meaning: "Charisma, especially in flirting.",
         example: "He's got mad rizz with his smooth talking."
