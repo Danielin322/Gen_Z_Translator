@@ -1,0 +1,140 @@
+/* Main Styles for Gen Z Translator */
+
+body {
+    background-color: #bedcfa; /* Baby blue background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding-bottom: 2rem;
+}
+
+/* Header styles */
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e3a8a;
+    padding: 1rem 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Card styling */
+.translator-card {
+    border-radius: 15px;
+    border: none;
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.translator-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #4a6fa5;
+    border-color: #4a6fa5;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #345c8d;
+    border-color: #345c8d;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(74, 111, 165, 0.4);
+}
+
+.btn-outline-primary {
+    color: #4a6fa5;
+    border-color: #4a6fa5;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #4a6fa5;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(74, 111, 165, 0.4);
+}
+
+/* Input field styling */
+#slangInput {
+    border: 2px solid #dce7f9;
+    border-radius: 10px 0 0 10px;
+    padding: 0.75rem 1.2rem;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+#slangInput:focus {
+    border-color: #4a6fa5;
+    box-shadow: 0 0 0 0.25rem rgba(74, 111, 165, 0.25);
+}
+
+.translate-btn {
+    border-radius: 0 10px 10px 0;
+    padding: 0.75rem 1.5rem;
+}
+
+/* Section titles */
+.section-title {
+    color: #4a6fa5;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Result boxes */
+.result-box {
+    background-color: #f8fafd;
+    border-radius: 10px;
+    border-left: 5px solid #4a6fa5;
+    transition: all 0.3s ease;
+}
+
+#meaningText, #exampleText {
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .input-group {
+        flex-direction: column;
+    }
+    
+    #slangInput, .translate-btn {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-title {
+        font-size: 1.75rem;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fadeIn {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Card header */
+.card-header {
+    background-color: #4a6fa5 !important;
+}

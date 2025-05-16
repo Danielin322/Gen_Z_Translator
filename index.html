@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gen Z Translator for Confused Parents</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container mt-4">
+        <header class="text-center mb-5">
+            <h1 class="main-title mb-4">Welcome, the Confused Parent of a Gen Z Kid</h1>
+            <p class="lead">Translating Gen Z slang so you can understand what your kids are talking about!</p>
+        </header>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card translator-card shadow">
+                    <div class="card-body">
+                        <div class="input-group mb-3">
+                            <input type="text" id="slangInput" class="form-control form-control-lg" placeholder="what the heck is: (type here)" aria-label="Enter Gen Z slang">
+                            <button class="btn btn-primary translate-btn" type="button" id="translateBtn">
+                                <i class="fas fa-language me-2"></i>Translate
+                            </button>
+                        </div>
+                        
+                        <div id="translationResult" class="mt-4 d-none">
+                            <h3 class="section-title">
+                                <i class="fas fa-book me-2"></i>Translator
+                            </h3>
+                            <div class="result-box p-3 mt-2 mb-3">
+                                <p class="mb-0" id="meaningText">Meaning will appear here...</p>
+                            </div>
+                            
+                            <button class="btn btn-outline-primary w-100" id="showExampleBtn">
+                                <i class="fas fa-quote-left me-2"></i>Show the word in a sentence
+                            </button>
+                            
+                            <div id="exampleSentence" class="result-box p-3 mt-3 d-none">
+                                <p class="mb-0" id="exampleText">Example sentence will appear here...</p>
+                            </div>
+                        </div>
+                        
+                        <div id="errorMessage" class="alert alert-danger mt-3 d-none">
+                            <i class="fas fa-exclamation-circle me-2"></i>
+                            <span id="errorText"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card mt-4 shadow">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="mb-0 fs-5">About Gen Z Slang</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Gen Z slang can be confusing for parents. This translator helps you understand what your teens are saying. Try typing terms like "rizz", "no cap", or "slay" to see what they mean!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="mt-5 py-3 text-center text-muted">
+        <div class="container">
+            <p>© 2023 Gen Z Translator for Confused Parents</p>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
