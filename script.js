@@ -163,5 +163,5 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-    console.log("Event listener for translateButton attached."); // Log 8: Confirmation of listener attachment
-});
+//     console.log("Event listener for translateButton attached."); // Log 8: Confirmation of listener attachment
+// });
